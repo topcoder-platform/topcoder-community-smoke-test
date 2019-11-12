@@ -20,10 +20,10 @@ jobs:
             - ./node_modules
       - run: 
           name: browser Update
-          command: './node_modules/.bin/webdriver-manager update'      
+          command: './node_modules/.bin/webdriver-manager update --versions.chrome= 12.1.7'      
       - run: 
           name: browser start
-          command: './node_modules/.bin/webdriver-manager start'   
+          command: './node_modules/.bin/webdriver-manager start --versions.chrome= 12.1.7'   
           background: true    
       - run: # run tests
           name: Execute Smoke Test
