@@ -1,0 +1,33 @@
+version: 2 
+jobs: 
+  build: 
+    working_directory: ~/topcoder-community-smoke-test 
+    docker: 
+      - image: circleci/node:11-browsers 
+    steps: 
+      - checkout 
+      - run:
+          name: update-npm
+          command: 'sudo npm install -g npm@latest'
+      - restore_cache: 
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install-npm-wee
+          command: npm install
+      - save_cache: 
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run: 
+          name: browser Update
+          command: './node_modules/.bin/webdriver-manager update'      
+      - run: 
+          name: browser start
+          command: './node_modules/.bin/webdriver-manager start'   
+          background: true    
+      - run: # run tests
+          name: Execute Smoke Test
+          command: npm test
+
+
+   
