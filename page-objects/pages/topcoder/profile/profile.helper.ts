@@ -21,10 +21,10 @@ export class ProfilePageHelper {
     }
 
     static async fillPersonalDetails() {
-        await ProfilePageObject.firstName.sendKeys(Key.chord(Key.CONTROL, 'a'));
+        await ProfilePageObject.firstName.clear();
         await ProfilePageObject.firstName.sendKeys('Test1');
 
-        await ProfilePageObject.lastName.sendKeys(Key.chord(Key.CONTROL, 'a'));
+        await ProfilePageObject.lastName.clear();
         await ProfilePageObject.lastName.sendKeys('User1');
         
         await ProfilePageObject.dob.click();

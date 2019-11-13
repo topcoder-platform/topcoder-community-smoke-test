@@ -7,7 +7,7 @@ export class ArenaPageHelper {
         const until = protractor.ExpectedConditions;
         await browser.wait(until.visibilityOf(ArenaPageObject.container));
         const browserUrl = await browser.getCurrentUrl();
-        expect(browserUrl).toEqual(ArenaPageConstants.url);
+        expect(browserUrl.includes("arena.topcoder.com")).toBe(true);
         console.log('User redirected to topcoder arena');
     }
 }
