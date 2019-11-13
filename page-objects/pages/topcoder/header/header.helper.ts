@@ -60,21 +60,15 @@ export class HeaderHelper {
 
     static async verifyAllCommunityLinks() {
         const links = ['TCO', 'Programs', 'Statistics', 'Events', 'Blog', 'Thrive'];
+        const urls = ['https://www.' + config.baseUrl + '/tco', 'https://www.' + config.baseUrl + '/community/member-programs', 'https://www.' + config.baseUrl + '/community/statistics', 'https://www.' + config.baseUrl + '/community/events', 'https://www.' + config.baseUrl + '/blog', 'https://www.' + config.baseUrl + '/thrive']
 
         for (let i = 0; i < links.length; i++) {
             const until = protractor.ExpectedConditions;
             await ChallengeListingPageHelper.get();
             await browser.actions().mouseMove(HeaderPageObject.communityLink).perform();
-            const communityLink = commonPageObjects.getLinkByAriaLabel(links[i]);
-            await browser.wait(until.elementToBeClickable(communityLink), 10000);
-            await communityLink.click();
-
-            if (links[i] == 'Blog') {
-                await browser.wait(until.visibilityOf(element(by.className('blog'))));
-            } else {
-                await browser.wait(until.visibilityOf(element(by.id('react-view'))));
-            }
-            console.log('User navigated to ' + links[i] + ' page');
+            const communityLink = commonPageObjects.getLinkByAriaLabel(links[i]).element(by.xpath('..'));
+            const href = await communityLink.getAttribute('href');
+            expect(href).toEqual(urls[i]);
         }
     }
 
