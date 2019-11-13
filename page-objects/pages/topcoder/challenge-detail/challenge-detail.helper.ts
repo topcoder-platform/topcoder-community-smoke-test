@@ -2,6 +2,7 @@ import { browser, protractor, by, element } from "protractor";
 import { ChallengeDetailPageConstants } from "./challenge-detail.constants";
 import { ChallengeDetailPageObject } from "./challenge-detail.po";
 import { commonPageObjects } from "../../../common/common.po";
+import { ForumPageConstants } from "../forum/forum.constants";
 const path = require('path');
 
 export class ChallengeDetailPageHelper {
@@ -75,8 +76,9 @@ export class ChallengeDetailPageHelper {
         }
     }
 
-    static async navigateToChallengeForum() {
-        await commonPageObjects.clickOnLinkText('CHALLENGE FORUM').click();
+    static async verifyChallengeForumLink() {
+        const href = await commonPageObjects.clickOnLinkText('CHALLENGE FORUM').getAttribute('href');
+        expect(href).toEqual(ForumPageConstants.content.challengeForumUrl)
     }
 
     static async unregister() {

@@ -58,8 +58,7 @@ describe('Topcoder Challenge Detail Page Tests: ', () => {
         it('should verify whether the user is registered to the particular challenge on clicking the Register button.', async () => {
             await ChallengeDetailPageHelper.get();
             await ChallengeDetailPageHelper.register();
-            await ChallengeDetailPageHelper.navigateToChallengeForum();
-            await ForumPageHelper.verifyChallengeForumPage();
+            await ChallengeDetailPageHelper.verifyChallengeForumLink();
         });
 
         it('should verify whether the user is unregistered into particular challenge on clicking the UnRegister button.', async () => {

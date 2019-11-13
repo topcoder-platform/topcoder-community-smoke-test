@@ -64,14 +64,12 @@ describe('Topcoder Header Tests: ', () => {
 
         it('should verify whether the user is redirected to the Topcoder Arena page on clicking the Competitive programming sub menu under the Compete menu.', async () => {
             await ChallengeListingPageHelper.get();
-            await HeaderHelper.clickOnCompetitiveProgrammingLink();
-            await ArenaPageHelper.verifyArenaPage();
+            await HeaderHelper.verifyCompetitiveProgrammingLink();
         });
 
         it('should verify whether the user is redirected to the Forum page on clicking the Forums sub menu under the Community menu.', async () => {
             await ChallengeListingPageHelper.get();
-            await HeaderHelper.clickForumCommunityLink();
-            await ForumPageHelper.verifyForumPage();
+            await HeaderHelper.verifyForumCommunityLink();
         });
     
         it('should verify whether the current page is redirected to my profile page on clicking the my profile under the Username menu.', async () => {
