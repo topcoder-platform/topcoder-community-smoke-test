@@ -1,7 +1,7 @@
 {
   "name": "topcoder-community-smoke-test",
   "version": "1.0.0",
-  "description": "E2E tests for Topcoder's Account app",
+  "description": "E2E tests for Topcoder's community app",
   "main": "conf.js",
   "dependencies": {
     "@types/node": "^12.7.8",

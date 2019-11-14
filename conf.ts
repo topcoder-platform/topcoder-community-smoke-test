@@ -55,16 +55,17 @@ exports.config = {
             consolidateAll: false
         });
         jasmine.getEnv().addReporter(junitReporter);
-        jasmine.getEnv().addReporter(new HtmlReporter({
-            baseDirectory: 'test-results',
-            preserveDirectory: false, // Preserve base directory
-            screenshotsSubfolder: 'screenshots',
-            jsonsSubfolder: 'jsons', // JSONs Subfolder
-            takeScreenShotsForSkippedSpecs: true, // Screenshots for skipped test cases
-            takeScreenShotsOnlyForFailedSpecs: false, // Screenshots only for failed test cases
-            docTitle: 'Test Automation Execution Report', // Add title for the html report
-            docName: 'TestResult.html', // Change html report file name
-            gatherBrowserLogs: true // Store Browser logs
-        }).getJasmine2Reporter());
+        // Only for local deployment
+        // jasmine.getEnv().addReporter(new HtmlReporter({
+        //     baseDirectory: 'test-results',
+        //     preserveDirectory: false, // Preserve base directory
+        //     screenshotsSubfolder: 'screenshots',
+        //     jsonsSubfolder: 'jsons', // JSONs Subfolder
+        //     takeScreenShotsForSkippedSpecs: true, // Screenshots for skipped test cases
+        //     takeScreenShotsOnlyForFailedSpecs: false, // Screenshots only for failed test cases
+        //     docTitle: 'Test Automation Execution Report', // Add title for the html report
+        //     docName: 'TestResult.html', // Change html report file name
+        //     gatherBrowserLogs: true // Store Browser logs
+        // }).getJasmine2Reporter());
     }
 }

@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="5" time="97.758">
- <testsuite name="Topcoder Preferences Page Tests: " timestamp="2019-11-12T07:19:38" hostname="localhost" time="97.758" errors="0" tests="5" skipped="0" disabled="0" failures="0">
-  <testcase classname="Topcoder Preferences Page Tests: " name="should Verify User can update Email Preferences" time="23.381" />
-  <testcase classname="Topcoder Preferences Page Tests: " name="should Verify User can redirect to forums&apos;s setting page" time="9.589" />
-  <testcase classname="Topcoder Preferences Page Tests: " name="should Verify User can redirect to Payment details page" time="10.746" />
-  <testcase classname="Topcoder Preferences Page Tests: " name="should Verify User can redirect to Request visa letter page" time="7.609" />
-  <testcase classname="Topcoder Preferences Page Tests: " name="should Verify User can redirect to Referrals page" time="28.677" />
+<testsuites disabled="5" errors="0" failures="0" tests="5" time="0.001">
+ <testsuite name="Topcoder Preferences Page Tests: " timestamp="2019-11-14T23:21:17" hostname="localhost" time="0.001" errors="0" tests="5" skipped="0" disabled="5" failures="0">
+  <testcase classname="Topcoder Preferences Page Tests: " name="should Verify User can update Email Preferences" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Preferences Page Tests: " name="should Verify User can redirect to forums&apos;s setting page" time="0.001">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Preferences Page Tests: " name="should Verify User can redirect to Payment details page" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Preferences Page Tests: " name="should Verify User can redirect to Request visa letter page" time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Preferences Page Tests: " name="should Verify User can redirect to Referrals page" time="0">
+   <skipped />
+  </testcase>
  </testsuite>
 </testsuites>

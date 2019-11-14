@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="2" time="73.701">
- <testsuite name="Topcoder Footer Tests: " timestamp="2019-11-12T07:34:04" hostname="localhost" time="73.701" errors="0" tests="2" skipped="0" disabled="0" failures="0">
-  <testcase classname="Topcoder Footer Tests: " name="should verify whether the user is redirected to respective page on clicking the footer menu link into Footer of page." time="54.206" />
-  <testcase classname="Topcoder Footer Tests: " name="should verify whether the user is redirected to the topcoder social sites on clicking the social sites icon." time="19.495" />
+<testsuites disabled="2" errors="0" failures="0" tests="2" time="0.002">
+ <testsuite name="Topcoder Footer Tests: " timestamp="2019-11-14T23:21:17" hostname="localhost" time="0.002" errors="0" tests="2" skipped="0" disabled="2" failures="0">
+  <testcase classname="Topcoder Footer Tests: " name="should verify whether the user is redirected to respective page on clicking the footer menu link into Footer of page." time="0.001">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Footer Tests: " name="should verify whether the user is redirected to the topcoder social sites on clicking the social sites icon." time="0">
+   <skipped />
+  </testcase>
  </testsuite>
 </testsuites>

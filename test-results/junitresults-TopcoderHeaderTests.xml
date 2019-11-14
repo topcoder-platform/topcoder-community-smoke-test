@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="12" time="292.626">
- <testsuite name="Topcoder Header Tests: " timestamp="2019-11-12T07:35:18" hostname="localhost" time="212.063" errors="0" tests="6" skipped="0" disabled="0" failures="0">
-  <testcase classname="Topcoder Header Tests: " name="should verify whether the user is redirected to the topcoder homepage on clicking the Topcoder logo" time="11.103" />
-  <testcase classname="Topcoder Header Tests: " name="should verify whether the user is redirected to the Challenge listing page on clicking the All Challenges sub menu under the Compete menu." time="7.659" />
-  <testcase classname="Topcoder Header Tests: " name="should verify whether the user is redirected to the Login page on clicking the Competitive programming sub menu under the Compete menu." time="10.953" />
-  <testcase classname="Topcoder Header Tests: " name="should verify whether the user is redirected to the respective page while clicking the sub menu under the Tracks menu." time="34.932" />
-  <testcase classname="Topcoder Header Tests: " name="should verify whether the user is redirected to the respective page while clicking the sub menu under the Community menu." time="49.121" />
-  <testcase classname="Topcoder Header Tests: " name="should verify whether the user is redirected to the Login page on clicking the Forums sub menu under the Community menu." time="17.732" />
+<testsuites disabled="12" errors="0" failures="0" tests="12" time="0.017">
+ <testsuite name="Topcoder Header Tests: " timestamp="2019-11-14T23:21:17" hostname="localhost" time="0.013" errors="0" tests="6" skipped="0" disabled="6" failures="0">
+  <testcase classname="Topcoder Header Tests: " name="should verify whether the user is redirected to the topcoder homepage on clicking the Topcoder logo" time="0.002">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Header Tests: " name="should verify whether the user is redirected to the Challenge listing page on clicking the All Challenges sub menu under the Compete menu." time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Header Tests: " name="should verify whether the user is redirected to the Login page on clicking the Competitive programming sub menu under the Compete menu." time="0.005">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Header Tests: " name="should verify whether the user is redirected to the respective page while clicking the sub menu under the Tracks menu." time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Header Tests: " name="should verify whether the user is redirected to the respective page while clicking the sub menu under the Community menu." time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Header Tests: " name="should verify whether the user is redirected to the Login page on clicking the Forums sub menu under the Community menu." time="0.001">
+   <skipped />
+  </testcase>
  </testsuite>
- <testsuite name="Topcoder Header Tests: .Tests with login as pre-requisite" timestamp="2019-11-12T07:37:29" hostname="localhost" time="80.563" errors="0" tests="6" skipped="0" disabled="0" failures="0">
-  <testcase classname="Topcoder Header Tests: .Tests with login as pre-requisite" name="should verify whether the user is redirected to the Topcoder Arena page on clicking the Competitive programming sub menu under the Compete menu." time="7.999" />
-  <testcase classname="Topcoder Header Tests: .Tests with login as pre-requisite" name="should verify whether the user is redirected to the Forum page on clicking the Forums sub menu under the Community menu." time="26.526" />
-  <testcase classname="Topcoder Header Tests: .Tests with login as pre-requisite" name="should verify whether the current page is redirected to my profile page on clicking the my profile under the Username menu." time="10.157" />
-  <testcase classname="Topcoder Header Tests: .Tests with login as pre-requisite" name="should verify whether the current page is redirected to the payments page on clicking the payments under the Username menu." time="8.373" />
-  <testcase classname="Topcoder Header Tests: .Tests with login as pre-requisite" name="should verify whether the current page is redirected to the settings page on clicking the settings under the Username menu." time="10.084" />
-  <testcase classname="Topcoder Header Tests: .Tests with login as pre-requisite" name="should verify whether the logout happens on clicking the logout under the Username menu." time="11.947" />
+ <testsuite name="Topcoder Header Tests: .Tests with login as pre-requisite" timestamp="2019-11-14T23:21:17" hostname="localhost" time="0.004" errors="0" tests="6" skipped="0" disabled="6" failures="0">
+  <testcase classname="Topcoder Header Tests: .Tests with login as pre-requisite" name="should verify whether the user is redirected to the Topcoder Arena page on clicking the Competitive programming sub menu under the Compete menu." time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Header Tests: .Tests with login as pre-requisite" name="should verify whether the user is redirected to the Forum page on clicking the Forums sub menu under the Community menu." time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Header Tests: .Tests with login as pre-requisite" name="should verify whether the current page is redirected to my profile page on clicking the my profile under the Username menu." time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Header Tests: .Tests with login as pre-requisite" name="should verify whether the current page is redirected to the payments page on clicking the payments under the Username menu." time="0">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Header Tests: .Tests with login as pre-requisite" name="should verify whether the current page is redirected to the settings page on clicking the settings under the Username menu." time="0.002">
+   <skipped />
+  </testcase>
+  <testcase classname="Topcoder Header Tests: .Tests with login as pre-requisite" name="should verify whether the logout happens on clicking the logout under the Username menu." time="0.002">
+   <skipped />
+  </testcase>
  </testsuite>
 </testsuites>

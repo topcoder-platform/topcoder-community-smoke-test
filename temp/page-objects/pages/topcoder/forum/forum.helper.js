@@ -48,7 +48,6 @@ var ForumPageHelper = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         until = protractor_1.protractor.ExpectedConditions;
-                        // await browser.wait(until.visibilityOf(ForumPageObject.container), 15000);
                         return [4 /*yield*/, protractor_1.browser.wait(function () { return __awaiter(_this, void 0, void 0, function () {
                                 var browserUrl;
                                 return __generator(this, function (_a) {
@@ -61,7 +60,6 @@ var ForumPageHelper = /** @class */ (function () {
                                 });
                             }); }, 15000)];
                     case 1:
-                        // await browser.wait(until.visibilityOf(ForumPageObject.container), 15000);
                         _a.sent();
                         console.log('User redirected to forums page');
                         return [2 /*return*/];
@@ -77,7 +75,6 @@ var ForumPageHelper = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         until = protractor_1.protractor.ExpectedConditions;
-                        // await browser.wait(until.visibilityOf(ForumPageObject.container), 15000);
                         return [4 /*yield*/, protractor_1.browser.wait(function () { return __awaiter(_this, void 0, void 0, function () {
                                 var browserUrl;
                                 return __generator(this, function (_a) {
@@ -90,7 +87,6 @@ var ForumPageHelper = /** @class */ (function () {
                                 });
                             }); }, 15000)];
                     case 1:
-                        // await browser.wait(until.visibilityOf(ForumPageObject.container), 15000);
                         _a.sent();
                         console.log('User redirected to challenge forums page');
                         return [2 /*return*/];
@@ -101,4 +97,4 @@ var ForumPageHelper = /** @class */ (function () {
     return ForumPageHelper;
 }());
 exports.ForumPageHelper = ForumPageHelper;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZm9ydW0uaGVscGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vcGFnZS1vYmplY3RzL3BhZ2VzL3RvcGNvZGVyL2ZvcnVtL2ZvcnVtLmhlbHBlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEseUNBQWlEO0FBQ2pELHFEQUF1RDtBQUd2RDtJQUFBO0lBd0JBLENBQUM7SUF2QmdCLCtCQUFlLEdBQTVCOzs7Ozs7O3dCQUNVLEtBQUssR0FBRyx1QkFBVSxDQUFDLGtCQUFrQixDQUFDO3dCQUM1Qyw0RUFBNEU7d0JBRTVFLHFCQUFNLG9CQUFPLENBQUMsSUFBSSxDQUFDOzs7O2dEQUNJLHFCQUFNLG9CQUFPLENBQUMsYUFBYSxFQUFFLEVBQUE7OzRDQUExQyxVQUFVLEdBQUcsU0FBNkI7NENBQ2hELHNCQUFPLFVBQVUsS0FBSyxvQ0FBa0IsQ0FBQyxHQUFHLEVBQUM7OztpQ0FDaEQsRUFBRSxLQUFLLENBQUMsRUFBQTs7d0JBTFQsNEVBQTRFO3dCQUU1RSxTQUdTLENBQUM7d0JBRVYsT0FBTyxDQUFDLEdBQUcsQ0FBQyxnQ0FBZ0MsQ0FBQyxDQUFDOzs7OztLQUNqRDtJQUVZLHdDQUF3QixHQUFyQzs7Ozs7Ozt3QkFDVSxLQUFLLEdBQUcsdUJBQVUsQ0FBQyxrQkFBa0IsQ0FBQzt3QkFDNUMsNEVBQTRFO3dCQUU1RSxxQkFBTSxvQkFBTyxDQUFDLElBQUksQ0FBQzs7OztnREFDSSxxQkFBTSxvQkFBTyxDQUFDLGFBQWEsRUFBRSxFQUFBOzs0Q0FBMUMsVUFBVSxHQUFHLFNBQTZCOzRDQUNoRCxzQkFBTyxVQUFVLEtBQUssb0NBQWtCLENBQUMsT0FBTyxDQUFDLGlCQUFpQixFQUFDOzs7aUNBQ3RFLEVBQUUsS0FBSyxDQUFDLEVBQUE7O3dCQUxULDRFQUE0RTt3QkFFNUUsU0FHUyxDQUFDO3dCQUVWLE9BQU8sQ0FBQyxHQUFHLENBQUMsMENBQTBDLENBQUMsQ0FBQzs7Ozs7S0FDM0Q7SUFDTCxzQkFBQztBQUFELENBQUMsQUF4QkQsSUF3QkM7QUF4QlksMENBQWUifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZm9ydW0uaGVscGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vcGFnZS1vYmplY3RzL3BhZ2VzL3RvcGNvZGVyL2ZvcnVtL2ZvcnVtLmhlbHBlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEseUNBQWlEO0FBQ2pELHFEQUF1RDtBQUd2RDtJQUFBO0lBc0JBLENBQUM7SUFyQmdCLCtCQUFlLEdBQTVCOzs7Ozs7O3dCQUNVLEtBQUssR0FBRyx1QkFBVSxDQUFDLGtCQUFrQixDQUFDO3dCQUU1QyxxQkFBTSxvQkFBTyxDQUFDLElBQUksQ0FBQzs7OztnREFDSSxxQkFBTSxvQkFBTyxDQUFDLGFBQWEsRUFBRSxFQUFBOzs0Q0FBMUMsVUFBVSxHQUFHLFNBQTZCOzRDQUNoRCxzQkFBTyxVQUFVLEtBQUssb0NBQWtCLENBQUMsR0FBRyxFQUFDOzs7aUNBQ2hELEVBQUUsS0FBSyxDQUFDLEVBQUE7O3dCQUhULFNBR1MsQ0FBQzt3QkFFVixPQUFPLENBQUMsR0FBRyxDQUFDLGdDQUFnQyxDQUFDLENBQUM7Ozs7O0tBQ2pEO0lBRVksd0NBQXdCLEdBQXJDOzs7Ozs7O3dCQUNVLEtBQUssR0FBRyx1QkFBVSxDQUFDLGtCQUFrQixDQUFDO3dCQUU1QyxxQkFBTSxvQkFBTyxDQUFDLElBQUksQ0FBQzs7OztnREFDSSxxQkFBTSxvQkFBTyxDQUFDLGFBQWEsRUFBRSxFQUFBOzs0Q0FBMUMsVUFBVSxHQUFHLFNBQTZCOzRDQUNoRCxzQkFBTyxVQUFVLEtBQUssb0NBQWtCLENBQUMsT0FBTyxDQUFDLGlCQUFpQixFQUFDOzs7aUNBQ3RFLEVBQUUsS0FBSyxDQUFDLEVBQUE7O3dCQUhULFNBR1MsQ0FBQzt3QkFFVixPQUFPLENBQUMsR0FBRyxDQUFDLDBDQUEwQyxDQUFDLENBQUM7Ozs7O0tBQzNEO0lBQ0wsc0JBQUM7QUFBRCxDQUFDLEFBdEJELElBc0JDO0FBdEJZLDBDQUFlIn0=
