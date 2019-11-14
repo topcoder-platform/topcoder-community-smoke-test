@@ -4,6 +4,8 @@ import { ChallengeListingPageHelper } from "../challenge-listing/challenge-listi
 import * as config from "../../../../config.json";
 import { commonPageObjects } from "../../../common/common.po";
 import { commonPageHelper } from "../../../common/common.helper";
+import { ArenaPageConstants } from "../arena/arena.constants";
+import { ForumPageConstants } from "../forum/forum.constants";
 
 export class HeaderHelper {
 
@@ -31,6 +33,15 @@ export class HeaderHelper {
         await competitiveProgrammingLink.click();
     }
 
+    static async verifyCompetitiveProgrammingLink() {
+        await browser.actions().mouseMove(HeaderPageObject.competeLink).perform();
+
+        const competitiveProgrammingLink = HeaderPageObject.competitiveProgrammingLink.element(by.xpath('..'));
+        
+        const href = await competitiveProgrammingLink.getAttribute('href');
+        expect(href).toEqual(ArenaPageConstants.url);
+    }
+
     static async verifyAllTrackLinks() {
         const links = ['Competitive Programming', 'Data Science', 'Design', 'Development', 'QA'];
 
@@ -49,21 +60,15 @@ export class HeaderHelper {
 
     static async verifyAllCommunityLinks() {
         const links = ['TCO', 'Programs', 'Statistics', 'Events', 'Blog', 'Thrive'];
+        const urls = ['https://www.' + config.baseUrl + '/tco', 'https://www.' + config.baseUrl + '/community/member-programs', 'https://www.' + config.baseUrl + '/community/statistics', 'https://www.' + config.baseUrl + '/community/events', 'https://www.' + config.baseUrl + '/blog', 'https://www.' + config.baseUrl + '/thrive']
 
         for (let i = 0; i < links.length; i++) {
             const until = protractor.ExpectedConditions;
             await ChallengeListingPageHelper.get();
             await browser.actions().mouseMove(HeaderPageObject.communityLink).perform();
-            const communityLink = commonPageObjects.getLinkByAriaLabel(links[i]);
-            await browser.wait(until.elementToBeClickable(communityLink), 10000);
-            await communityLink.click();
-
-            if (links[i] == 'Blog') {
-                await browser.wait(until.visibilityOf(element(by.className('blog'))));
-            } else {
-                await browser.wait(until.visibilityOf(element(by.id('react-view'))));
-            }
-            console.log('User navigated to ' + links[i] + ' page');
+            const communityLink = commonPageObjects.getLinkByAriaLabel(links[i]).element(by.xpath('..'));
+            const href = await communityLink.getAttribute('href');
+            expect(href).toEqual(urls[i]);
         }
     }
 
@@ -75,6 +80,16 @@ export class HeaderHelper {
         await browser.wait(until.elementToBeClickable(communityLink), 5000);
         await communityLink.click();
         console.log('Forum community link clicked');
+    }
+
+    static async verifyForumCommunityLink() {
+        await ChallengeListingPageHelper.get();
+        
+        await browser.actions().mouseMove(HeaderPageObject.communityLink).perform();
+        const communityLink = commonPageObjects.getLinkByAriaLabel('Forums').element(by.xpath('..'));
+
+        const href = await communityLink.getAttribute('href');
+        expect(href).toEqual(ForumPageConstants.url);
     }
 
     static async clickOnDashboardLink() {
