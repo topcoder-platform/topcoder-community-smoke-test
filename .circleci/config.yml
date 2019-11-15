@@ -29,7 +29,8 @@ jobs:
           name: Execute Smoke Test
           command: npm run test
       - store_artifacts: # Upload artifacts
-          path: /topcoder-community-smoke-test/test-results
+          path: /topcoder-community-smoke-test/test-results/
+          destination: artifact-file
       - run: # For TestQuality
           name: TestQuality Login/Upload file to Test TestQuality Server
           command: |
