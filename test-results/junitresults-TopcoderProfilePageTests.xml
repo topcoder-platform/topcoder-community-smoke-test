@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="7" errors="0" failures="0" tests="7" time="0.004">
- <testsuite name="Topcoder Profile Page Tests: " timestamp="2019-11-14T23:21:17" hostname="localhost" time="0.004" errors="0" tests="7" skipped="0" disabled="7" failures="0">
-  <testcase classname="Topcoder Profile Page Tests: " name="should verify whether the current user can update basic information." time="0.001">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Profile Page Tests: " name="should verify User can Add/Update/Delete language" time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Profile Page Tests: " name="should verify User can Add/Update/Delete Education" time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Profile Page Tests: " name="should verify User can Add/Update/Delete work " time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Profile Page Tests: " name="should verify User can Add/Delete skill." time="0.001">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Profile Page Tests: " name="should verify User can Add/Update/Delete the hobby." time="0.001">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Profile Page Tests: " name="should verify User can update the community." time="0">
-   <skipped />
-  </testcase>
+<testsuites disabled="0" errors="0" failures="0" tests="7" time="251.53">
+ <testsuite name="Topcoder Profile Page Tests: " timestamp="2019-11-15T12:37:12" hostname="localhost" time="251.53" errors="0" tests="7" skipped="0" disabled="0" failures="0">
+  <testcase classname="Topcoder Profile Page Tests: " name="should verify whether the current user can update basic information." time="17.045" />
+  <testcase classname="Topcoder Profile Page Tests: " name="should verify User can Add/Update/Delete language" time="34.027" />
+  <testcase classname="Topcoder Profile Page Tests: " name="should verify User can Add/Update/Delete Education" time="48.399" />
+  <testcase classname="Topcoder Profile Page Tests: " name="should verify User can Add/Update/Delete work " time="43.472" />
+  <testcase classname="Topcoder Profile Page Tests: " name="should verify User can Add/Delete skill." time="21.591" />
+  <testcase classname="Topcoder Profile Page Tests: " name="should verify User can Add/Update/Delete the hobby." time="41.77" />
+  <testcase classname="Topcoder Profile Page Tests: " name="should verify User can update the community." time="4.425" />
  </testsuite>
 </testsuites>

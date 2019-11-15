@@ -1,109 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="34" errors="0" failures="0" tests="34" time="0.03">
- <testsuite name="Topcoder Challenge Listing Page Tests: " timestamp="2019-11-14T23:21:17" hostname="localhost" time="0.024" errors="0" tests="26" skipped="0" disabled="26" failures="0">
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the current page is redirected to Registration page on clicking the Join button" time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the current page is redirected to Login page on clicking the Log in button." time="0.001">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the user is able to search the member by their username/skill using the search icon." time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether all the open for registration and Ongoing challenges are listed on clicking the Challenge tab." time="0.003">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether login page is opened on clicking the SRM tab." time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the user is able to search for a challenge by using the Search challenges textbox." time="0.001">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the &quot;Filter&quot; button is working correctly" time="0.001">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the &quot;Filter&quot; option &quot;keywords&quot; is working correctly" time="0.002">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the &quot;Filter&quot; option &quot;Subtrack&quot; is working correctly" time="0.001">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the &quot;Filter&quot; option &quot;Sub Community&quot; is working correctly" time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the &quot;Filter&quot; option for &quot;Date range&quot; is workingcorrectly" time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the challenges are filtered according to the keyword/Subtrack/Sub community/Date range fields selected under the Filter function." time="0.001">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the user is able to select more than one keyword/Subtrack under the filter function." time="0.001">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the cross symbol inside the textbox keyword/Subtrack filters removes the selected keyword/Subtrack." time="0.002">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the number of filters applied are shown into Filter button according to the keyword/Subtrack/Sub community/Date range fields selected." time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the clear filter button clears all the filters selected and all the challenges are displayed." time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the Save filter button is deactivated into filter function." time="0.001">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the Sort by select option under the Open for registration/Ongoing Challenges list sorts the challenges according to the selected option." time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the View more challenges link under the Open for registration/Ongoing Challenges list displays all the Open for registration/Ongoing challenges." time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that when user selects a challenge &quot;tag&quot;, only challenges under the selected tag are shown." time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the challenge count matches the number of challenges displayed" time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the challenge count remains the same when switching to the challenge details and then back to the challenge listings page " time="0.001">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify All Challenges link functionality with the design, development, and data sceince toggle switches on" time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify All Challenges link functionality with the design, development, and data sceince toggle switches Off" time="0.002">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the page is redirected to the RSS Feed page on clicking the RSS feed link." time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the page is redirected to the respective page on clicking the link(About, Contact, Help, Privacy, Terms)." time="0.001">
-   <skipped />
-  </testcase>
+<testsuites disabled="0" errors="0" failures="0" tests="34" time="760.624">
+ <testsuite name="Topcoder Challenge Listing Page Tests: " timestamp="2019-11-15T12:46:48" hostname="localhost" time="646.064" errors="0" tests="26" skipped="0" disabled="0" failures="0">
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the current page is redirected to Registration page on clicking the Join button" time="9.277" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the current page is redirected to Login page on clicking the Log in button." time="8.532" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the user is able to search the member by their username/skill using the search icon." time="21.088" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether all the open for registration and Ongoing challenges are listed on clicking the Challenge tab." time="8.282" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether login page is opened on clicking the SRM tab." time="10.658" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the user is able to search for a challenge by using the Search challenges textbox." time="10.424" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the &quot;Filter&quot; button is working correctly" time="7.762" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the &quot;Filter&quot; option &quot;keywords&quot; is working correctly" time="23.977" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the &quot;Filter&quot; option &quot;Subtrack&quot; is working correctly" time="22.752" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the &quot;Filter&quot; option &quot;Sub Community&quot; is working correctly" time="22.807" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the &quot;Filter&quot; option for &quot;Date range&quot; is workingcorrectly" time="11.108" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the challenges are filtered according to the keyword/Subtrack/Sub community/Date range fields selected under the Filter function." time="38.535" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the user is able to select more than one keyword/Subtrack under the filter function." time="44.778" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the cross symbol inside the textbox keyword/Subtrack filters removes the selected keyword/Subtrack." time="86.26" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the number of filters applied are shown into Filter button according to the keyword/Subtrack/Sub community/Date range fields selected." time="14.056" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the clear filter button clears all the filters selected and all the challenges are displayed." time="13.575" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the Save filter button is deactivated into filter function." time="8.369" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the Sort by select option under the Open for registration/Ongoing Challenges list sorts the challenges according to the selected option." time="9.888" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the View more challenges link under the Open for registration/Ongoing Challenges list displays all the Open for registration/Ongoing challenges." time="8.699" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that when user selects a challenge &quot;tag&quot;, only challenges under the selected tag are shown." time="9.86" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the challenge count matches the number of challenges displayed" time="38.434" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify that the challenge count remains the same when switching to the challenge details and then back to the challenge listings page " time="21.592" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify All Challenges link functionality with the design, development, and data sceince toggle switches on" time="16.109" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify All Challenges link functionality with the design, development, and data sceince toggle switches Off" time="21.928" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the page is redirected to the RSS Feed page on clicking the RSS feed link." time="10.187" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: " name="should verify whether the page is redirected to the respective page on clicking the link(About, Contact, Help, Privacy, Terms)." time="32.563" />
  </testsuite>
- <testsuite name="Topcoder Challenge Listing Page Tests: .After login test cases" timestamp="2019-11-14T23:21:17" hostname="localhost" time="0.006" errors="0" tests="8" skipped="0" disabled="8" failures="0">
-  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the current page is redirected to my Dashboard page on clicking the Dashboard under the Username menu." time="0.002">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the current page is redirected to my profile page on clicking the my profile under the Username menu." time="0.001">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the current page is redirected to the payments page on clicking the payments under the Username menu." time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the current page is redirected to the settings page on clicking the settings under the Username menu." time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the user is able to search the member by their username/skill using the search icon." time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether all the my challenges, open for registration and Ongoing challenges are listed on clicking the Challenge tab." time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the Topcoder arena page is opened on clicking the SRM tab. " time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the logout happens on clicking the logout under the Username menu." time="0.002">
-   <skipped />
-  </testcase>
+ <testsuite name="Topcoder Challenge Listing Page Tests: .After login test cases" timestamp="2019-11-15T12:55:40" hostname="localhost" time="114.56" errors="0" tests="8" skipped="0" disabled="0" failures="0">
+  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the current page is redirected to my Dashboard page on clicking the Dashboard under the Username menu." time="12.415" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the current page is redirected to my profile page on clicking the my profile under the Username menu." time="11.027" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the current page is redirected to the payments page on clicking the payments under the Username menu." time="10.148" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the current page is redirected to the settings page on clicking the settings under the Username menu." time="10.867" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the user is able to search the member by their username/skill using the search icon." time="21.534" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether all the my challenges, open for registration and Ongoing challenges are listed on clicking the Challenge tab." time="7.481" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the Topcoder arena page is opened on clicking the SRM tab. " time="19.511" />
+  <testcase classname="Topcoder Challenge Listing Page Tests: .After login test cases" name="should verify whether the logout happens on clicking the logout under the Username menu." time="12.81" />
  </testsuite>
 </testsuites>

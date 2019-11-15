@@ -28,6 +28,8 @@ jobs:
       - run: # run tests
           name: Execute Smoke Test
           command: npm run test
+      - store_artifacts: # Upload artifacts
+          path: /test-results
       - run: # For TestQuality
           name: TestQuality Login/Upload file to Test TestQuality Server
           command: |

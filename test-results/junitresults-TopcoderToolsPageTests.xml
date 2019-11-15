@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="4" errors="0" failures="0" tests="4" time="0.002">
- <testsuite name="Topcoder Tools Page Tests: " timestamp="2019-11-14T23:21:17" hostname="localhost" time="0.002" errors="0" tests="4" skipped="0" disabled="4" failures="0">
-  <testcase classname="Topcoder Tools Page Tests: " name="should verify User can Add/Update/Delete Device" time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Tools Page Tests: " name="should Verify User can Add/Update/Delete Software" time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Tools Page Tests: " name="should Verify User can Add/Update/Delete Service Provider" time="0">
-   <skipped />
-  </testcase>
-  <testcase classname="Topcoder Tools Page Tests: " name="should Verify User can Add/Update/Delete Subscriptions " time="0">
-   <skipped />
-  </testcase>
+<testsuites disabled="0" errors="0" failures="0" tests="4" time="156.675">
+ <testsuite name="Topcoder Tools Page Tests: " timestamp="2019-11-15T12:41:24" hostname="localhost" time="156.675" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="Topcoder Tools Page Tests: " name="should verify User can Add/Update/Delete Device" time="33.432" />
+  <testcase classname="Topcoder Tools Page Tests: " name="should Verify User can Add/Update/Delete Software" time="37.909" />
+  <testcase classname="Topcoder Tools Page Tests: " name="should Verify User can Add/Update/Delete Service Provider" time="32.851" />
+  <testcase classname="Topcoder Tools Page Tests: " name="should Verify User can Add/Update/Delete Subscriptions " time="32.747" />
  </testsuite>
 </testsuites>
