@@ -1,0 +1,10 @@
+version: "3"
+services:
+  angular_e2e:
+    image: thompsnm/docker-e2e-protractor:latest
+    container_name: "angular_e2e"
+    volumes:
+      - .:/usr/app/
+    working_dir: /usr/app/
+    command: >
+      bash -c "ng test"
