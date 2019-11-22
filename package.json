@@ -14,7 +14,7 @@
     "protractor": "^5.4.2",
     "protractor-beautiful-reporter": "^1.2.8",
     "typescript": "^3.5.3",
-    "webdriver-manager": "^12.1.5"
+    "webdriver-manager": "^12.1.7"
   },
   "devDependencies": {
     "@types/jasmine": "^3.3.16",

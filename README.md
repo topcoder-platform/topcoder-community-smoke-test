@@ -49,3 +49,9 @@ Finished in 1625.705 seconds```
 - Please check this test and this comment which need to be fixed by TC devs:
 Test: `should Verify User can update Email Preferences`
 comment: `"FIXME - below condition has to be fixed by Topcoder Devs"`
+
+#### Docker Deployment
+Run the below command at project root folder.
+-  `docker build -t comm-smoke:latest .`
+-  `docker run comm-smoke:latest ./testrun.sh` 
+-  Give execute permission to your script `chmod +x /path/to/yourscript.sh`
