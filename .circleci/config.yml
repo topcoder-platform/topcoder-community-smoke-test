@@ -25,11 +25,10 @@ jobs:
           name: browser start
           command: './node_modules/.bin/webdriver-manager start --versions.chrome=75.0.3770.142'
           background: true    
-       - run: 
-          name: Get config
-          command: Echo $SMOKE_CONFIG_PROD | base64 -d > config.json 
-          background: true       
-      - run: # run tests 
+      - run:
+           name: configuratoin
+           command: Echo $SMOKE_CONFIG_PROD | base64 -d > config.json 
+      - run: # run tests
           name: Execute Smoke Test
           command: npm run test
       - run: # compress
