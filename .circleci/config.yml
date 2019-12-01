@@ -27,7 +27,7 @@ jobs:
           background: true    
       - run:
            name: configuratoin
-           command: Echo $SMOKE_CONFIG_PROD | base64 -d > config.json 
+           command: echo $SMOKE_CONFIG_PROD | base64 -d > config.json 
       - run: # run tests
           name: Execute Smoke Test
           command: npm run test
