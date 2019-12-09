@@ -49,3 +49,6 @@ Finished in 1625.705 seconds```
 - Please check this test and this comment which need to be fixed by TC devs:
 Test: `should Verify User can update Email Preferences`
 comment: `"FIXME - below condition has to be fixed by Topcoder Devs"`
+
+#### Local Deployment
+- Please put the config.json file on root folder .
