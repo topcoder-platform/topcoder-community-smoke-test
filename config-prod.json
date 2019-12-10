@@ -30,5 +30,9 @@
     },
     "account": {
         "testingUrl": "https://www.topcoder.com/settings/account"
-    }
+    },
+    "challengeId": "30106190",
+    "challengeUrl": "https://www.topcoder.com/challenges/30106190",
+    "challengeForumUrl": "https://apps.topcoder.com/forums/?module=Category&categoryID=82117",
+    "reviewScorecardUrl": "https://software.topcoder.com/review/actions/ViewScorecard?scid=30002133"
 }
