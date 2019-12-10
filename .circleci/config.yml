@@ -28,6 +28,9 @@ jobs:
       - run: # run tests
           name: Execute Smoke Test
           command: npm run test
+      - run: # run tests in dev mode
+          name: Execute Smoke Test in Dev Mode
+          command: npm run test -- --params.mode=dev
       - run: # compress
           name: Compress Artifacts
           command: tar -cvf artifact.tar  test-results/   
