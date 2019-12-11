@@ -50,24 +50,33 @@ exports.config = {
     },
 
     onPrepare: () => {
-        browser.manage().window().maximize();
-        browser.manage().timeouts().implicitlyWait(5000);
-        var junitReporter = new reporters.JUnitXmlReporter({
-            savePath: 'test-results',
-            consolidateAll: false
-        });
-        jasmine.getEnv().addReporter(junitReporter);
-        // Only for local deployment
-        jasmine.getEnv().addReporter(new HtmlReporter({
-            baseDirectory: 'test-results',
-            preserveDirectory: false, // Preserve base directory
-            screenshotsSubfolder: 'screenshots',
-            jsonsSubfolder: 'jsons', // JSONs Subfolder
-            takeScreenShotsForSkippedSpecs: true, // Screenshots for skipped test cases
-            takeScreenShotsOnlyForFailedSpecs: false, // Screenshots only for failed test cases
-            docTitle: 'Test Automation Execution Report', // Add title for the html report
-            docName: 'TestResult.html', // Change html report file name
-            gatherBrowserLogs: true // Store Browser logs
-        }).getJasmine2Reporter());
+        return new Promise(function (fulfill, reject) {
+            browser.manage().window().maximize();
+            browser.manage().timeouts().implicitlyWait(5000);
+
+            browser.getCapabilities().then(function (value) {
+                const reportName = value.get('browserName') + '_' + Math.floor(Math.random()*1E16);
+
+                var junitReporter = new reporters.JUnitXmlReporter({
+                    savePath: 'test-results',
+                    consolidateAll: true,
+                    filePrefix: reportName
+                });
+                jasmine.getEnv().addReporter(junitReporter);
+
+                jasmine.getEnv().addReporter(new HtmlReporter({
+                    baseDirectory: 'test-results',
+                    preserveDirectory: true, // Preserve base directory
+                    screenshotsSubfolder: 'screenshots',
+                    jsonsSubfolder: 'jsons', // JSONs Subfolder
+                    takeScreenShotsForSkippedSpecs: true, // Screenshots for skipped test cases
+                    takeScreenShotsOnlyForFailedSpecs: false, // Screenshots only for failed test cases
+                    docTitle: 'Test Automation Execution Report', // Add title for the html report
+                    docName: 'TestReport.html', // Change html report file name
+                    gatherBrowserLogs: true // Store Browser logs
+                }).getJasmine2Reporter());
+                fulfill();
+            })
+        })
     }
 }
