@@ -65,18 +65,18 @@ describe('Topcoder Profile Page Tests: ', () => {
         await ProfilePageHelper.addSkill();
         await ProfilePageHelper.deleteSkill();
     });
+// For demo purpose we are using below test case as manual
+//     it('should verify User can Add/Update/Delete the hobby.', async () => {
+//         await ProfilePageHelper.get();
+//         await commonPageHelper.switchTab('hobbies', 'Hobby');
+//         await ProfilePageHelper.addHobby();
+//         await ProfilePageHelper.editHobby();
+//         await ProfilePageHelper.deleteHobby();
+//     });
 
-    xit('should verify User can Add/Update/Delete the hobby.', async () => {
-        await ProfilePageHelper.get();
-        await commonPageHelper.switchTab('hobbies', 'Hobby');
-        await ProfilePageHelper.addHobby();
-        await ProfilePageHelper.editHobby();
-        await ProfilePageHelper.deleteHobby();
-    });
-
-    xit('should verify User can update the community.', async () => {
-        await ProfilePageHelper.get();
-        await commonPageHelper.switchTab('communities', 'Community');
-        await ProfilePageHelper.verifyBlockchainCommunity();
-    });
-});
+//     it('should verify User can update the community.', async () => {
+//         await ProfilePageHelper.get();
+//         await commonPageHelper.switchTab('communities', 'Community');
+//         await ProfilePageHelper.verifyBlockchainCommunity();
+//     });
+// });
