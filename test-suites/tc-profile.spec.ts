@@ -23,7 +23,7 @@ describe('Topcoder Profile Page Tests: ', () => {
         await HomePageHelper.verifyHomePage();
     });
 
-    fit('should verify whether the current user can update basic information.', async () => {
+    it('should verify whether the current user can update basic information.', async () => {
         await ProfilePageHelper.get();
         await ProfilePageHelper.fillPersonalDetails();
         await ProfilePageHelper.fillAboutYou();
