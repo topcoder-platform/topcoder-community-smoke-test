@@ -44,16 +44,9 @@ jobs:
           command: |
             sudo chmod 755 testquality-linux
             ./testquality-linux login $EMAIL $PASSWORD --save
-            ./testquality-linux upload_test_run test-results/junitresults-TopcoderAccountPageTests.xml --project_name='topcoder-community-smoke-test' --plan_name='community app test plan' 
-            ./testquality-linux upload_test_run test-results/junitresults-TopcoderChallengeDetailPageTests.xml --project_name='topcoder-community-smoke-test' --plan_name='community app test plan'
-            ./testquality-linux upload_test_run test-results/junitresults-TopcoderChallengeListingPageTests.xml --project_name='topcoder-community-smoke-test' --plan_name='community app test plan'
-            ./testquality-linux upload_test_run test-results/junitresults-TopcoderDashboardTests.xml --project_name='topcoder-community-smoke-test' --plan_name='community app test plan'
-            ./testquality-linux upload_test_run test-results/junitresults-TopcoderFooterTests.xml --project_name='topcoder-community-smoke-test' --plan_name='community app test plan'
-            ./testquality-linux upload_test_run test-results/junitresults-TopcoderHeaderTests.xml --project_name='topcoder-community-smoke-test' --plan_name='community app test plan'
-            ./testquality-linux upload_test_run test-results/junitresults-TopcoderPreferencesPageTests.xml --project_name='topcoder-community-smoke-test' --plan_name='community app test plan'
-            ./testquality-linux upload_test_run test-results/junitresults-TopcoderProfilePageTests.xml --project_name='topcoder-community-smoke-test' --plan_name='community app test plan'
-            ./testquality-linux upload_test_run test-results/junitresults-TopcoderToolsPageTests.xml --project_name='topcoder-community-smoke-test' --plan_name='community app test plan'
-          when: always
+             upload_test_run test-results/junitresults-TopcoderProfilePageTests.xml --project_name='Community' --plan_name='Community App Smoke Test'
+             #./testquality-linux create_manual_run --project_name='Community App' --plan_name='Community App Test Plan' --run_name='$CIRCLE_BUILD_NUM'
+            when: always
 
 
    
