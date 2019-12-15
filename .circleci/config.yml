@@ -46,7 +46,7 @@ jobs:
             sudo chmod 755 testquality-linux
             ./testquality-linux login $EMAIL $PASSWORD --save
             ./testquality-linux upload_test_run test-results/junitresults-TopcoderProfilePageTests.xml --project_name='Community' --plan_name='Community App- Smoke Test Automation'
-            ./testquality-linux create_manual_run --project_name='Community' --plan_name='Community App- Smoke Test  Manual'  --run_name= Test Run For  $CIRCLE_BUILD_NUM
+            ./testquality-linux create_manual_run --project_name='Community' --plan_name='Community App- Smoke Test  Manual'  --run_name= $CIRCLE_BUILD_NUM
           when: always
 
 
