@@ -79,4 +79,4 @@ describe('Topcoder Profile Page Tests: ', () => {
 //         await commonPageHelper.switchTab('communities', 'Community');
 //         await ProfilePageHelper.verifyBlockchainCommunity();
 //     });
-// });
+ });
