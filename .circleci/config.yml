@@ -33,9 +33,10 @@ jobs:
           command: npm run test
       - run: # compress
           name: Compress Artifacts
-          command: |
-           ls 
-           tar -cvf artifact.tar  test-results/   
+          command: tar -cvf artifact.tar  test-results/   
+      - run: # compress
+          name: Compress Artifacts
+          command: echo $CIRCLE_BUILD_NUM
       - store_artifacts: # Upload artifacts
           path: artifact.tar
           destination: artifact-file
