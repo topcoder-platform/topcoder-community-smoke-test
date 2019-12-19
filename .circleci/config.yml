@@ -25,9 +25,9 @@ jobs:
           name: browser start
           command: './node_modules/.bin/webdriver-manager start --versions.chrome=75.0.3770.142'
           background: true    
-      - run: # run tests
-          name: Execute Smoke Test
-          command: npm run test
+      #- run: # run tests
+      #    name: Execute Smoke Test
+      #    command: npm run test
       - run: # run tests in dev mode
           name: Execute Smoke Test in Dev Mode
           command: npm run test -- --params.mode=dev
