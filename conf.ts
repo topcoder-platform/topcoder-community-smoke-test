@@ -19,8 +19,8 @@ exports.config = {
     // Capabilities to be passed to the webdriver instance.
     capabilities: {
         'browserName': 'chrome',
-        'shardTestFiles': true,
-        'maxInstances': 2,
+        // 'shardTestFiles': true,
+        // 'maxInstances': 2,
         chromeOptions: {
             args: ['--headless', '--disable-gpu', '--window-size=1325x744']
         }
